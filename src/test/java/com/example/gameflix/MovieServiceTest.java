@@ -17,7 +17,7 @@ class MovieServiceTest {
     void getAllMovies_ShouldReturnNonEmptyList() {
         List<Movie> movies = movieService.getAllMovies();
 
-        // Basic sanity checks so the test feels like a real one a junior dev would write.
+//sanity checks
         Assertions.assertNotNull(movies, "Movie list should never be null");
         Assertions.assertFalse(movies.isEmpty(), "Seed data should give us at least one movie");
     }
